@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Box, Input, Text, Spinner, List, ListItem } from "@chakra-ui/react";
+
 import { useNavigate } from "react-router-dom";
+import { Box, Input, Text, Spinner, List, ListItem } from "@chakra-ui/react";
+
 
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState("");
