@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Image, Flex, Button } from '@chakra-ui/react';
 import { IoBagHandleOutline } from "react-icons/io5";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../Redux/signin/action';

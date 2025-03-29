@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Box, Input, Text, Spinner, List, ListItem } from "@chakra-ui/react";
 
 
@@ -10,7 +10,7 @@ const Search = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const navigate = useNavigate(); // Initialize the navigate hook
+  // const navigate = useNavigate(); // Initialize the navigate hook
 
   // Debounce logic
   const useDebounce = (value, delay) => {
@@ -51,9 +51,9 @@ const Search = () => {
   }, [debouncedSearchQuery]);
 
   // Handle product click to navigate to the detail page
-  const handleProductClick = (productId) => {
-    navigate(`/product/${productId}`); // Navigate to product detail page
-  };
+  // const handleProductClick = (productId) => {
+  //   navigate(`/product/${productId}`); // Navigate to product detail page
+  // };
 
   return (
     <Box mt={4} position="relative"w="50%">
@@ -99,7 +99,7 @@ const Search = () => {
                 key={product._id}
                 p={2}
                 _hover={{ bg: "gray.100", cursor: "pointer" }}
-                onClick={() => handleProductClick(product._id)}
+                // onClick={() => handleProductClick(product._id)}
               >
                 {product.name}
               </ListItem>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Box, Text, IconButton, Flex } from "@chakra-ui/react";
-import { motion } from "framer-motion";
+
 
 
 const Slider1 = () => {
